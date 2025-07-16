@@ -1,0 +1,198 @@
+:root {
+    --primary-color: #FEAE01;
+    --secondary-color: #403B30;
+    --white: #ffffff;
+    --gray: #808080;
+
+    --font-family: "Poppins", sans-serif;
+    --text-font: "Lato", sans-serif;
+
+    --fs-1: 18px;
+    --fs-2: 20px;
+    --fs-3: 31px;
+    --fs-4: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--white);
+    height: 100vh;
+}
+
+.nav {
+    padding: 10px 20px;
+}
+
+.nav .logo {
+    text-decoration: none;
+    font-size: var(--fs-3);
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.nav .logo span {
+    color: var(--secondary-color);
+}
+
+.form {
+    display: flex;
+    height: 100vh;
+}
+
+.form .content {
+    padding: 20px 30px;
+    width: 50%;
+}
+
+.content .form-title {
+    text-transform: capitalize;
+    font-size: var(--fs-4);
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.content .icons .icon-box {
+    background-color: var(--white);
+    border: 1px solid var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0.5, 0.5);
+    cursor: pointer;
+    transition: all .3s ease-in;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.content .icons .icon-box:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0.5, 0.2);
+}
+
+.content .icons .icon-box .icon {
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.content .text {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: var(--fs-2);
+    color: var(--gray);
+    font-weight: 400;
+    font-family: var(--text-font);
+    margin-bottom: 25px;
+}
+
+.content .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.content .inputs .input {
+    width: 350px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    padding-left: 20px;
+    position: relative;
+    left: 20%;
+    outline: none;
+    font-size: var(--fs-1);
+    color: var(--secondary-color);
+}
+
+.content .inputs .input::placeholder {
+    font-family: var(--text-font);
+}
+
+.content .inputs .forgot {
+    text-decoration: none;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    font-size: var(--fs-1);
+    transition: all .3s ease-in;
+    margin-bottom: 20px;
+}
+
+.content .inputs .forgot:hover {
+    color: var(--primary-color);
+}
+
+.content .btn {
+    background-color: var(--primary-color);
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    text-transform: capitalize;
+    font-size: var(--fs-1);
+    font-weight: 600;
+    color: var(--secondary-color);
+    position: relative;
+    left: 32%;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.content .btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+}
+
+.form .showcase {
+    background-color: var(--primary-color);
+    padding: 20px 30px;
+    text-align: center;
+    width: 50%;
+}
+
+.showcase .showcase-title {
+    font-size: var(--fs-4);
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    margin-top: 15%;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.showcase .showcase-desc {
+    font-size: var(--fs-1);
+    font-weight: 300;
+    margin-bottom: 30%;
+}
+
+.showcase .link {
+    background-color: transparent;
+    padding: 10px 50px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 12px;
+    font-size: var(--fs-1);
+    color: var(--secondary-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s ease-in;
+}
+
+.showcase .link:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}

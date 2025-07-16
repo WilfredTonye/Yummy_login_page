@@ -1,0 +1,30 @@
+@import url(../css/signin.css);
+
+:root {
+    --primary-color: #FEAE01;
+    --secondary-color: #403B30;
+    --white: #ffffff;
+    --gray: #808080;
+
+    --font-family: "Poppins", sans-serif;
+    --text-font: "Lato", sans-serif;
+
+    --fs-1: 18px;
+    --fs-2: 20px;
+    --fs-3: 31px;
+    --fs-4: 50px;
+}
+
+.showcase .logo {
+    padding: 10px 20px;
+    text-align: left !important;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: var(--fs-3);
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.content .inputs {
+    margin-bottom: 10%;
+}
